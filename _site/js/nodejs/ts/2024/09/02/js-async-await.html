@@ -1,0 +1,19 @@
+<h2 id="understanding-asyncawait-in-javascript">Understanding Async/Await in JavaScript</h2>
+
+<p>Async/Await is a modern syntax in JavaScript for handling asynchronous operations, making your code more readable and easier to manage.</p>
+
+<h3 id="key-concepts">Key Concepts:</h3>
+
+<ol>
+  <li>
+    <p><strong>Async Functions</strong>: Functions declared with <code class="language-plaintext highlighter-rouge">async</code> return a promise. They can pause execution using <code class="language-plaintext highlighter-rouge">await</code>.</p>
+
+    <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">async</span> <span class="kd">function</span> <span class="nx">fetchData</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">let</span> <span class="nx">response</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">fetch</span><span class="p">(</span><span class="dl">'</span><span class="s1">https://api.example.com/data</span><span class="dl">'</span><span class="p">);</span>
+    <span class="kd">let</span> <span class="nx">data</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
+    <span class="k">return</span> <span class="nx">data</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+
