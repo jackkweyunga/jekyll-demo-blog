@@ -1,0 +1,30 @@
+<h2 id="using-virtual-environments-in-python">Using Virtual Environments in Python</h2>
+
+<p>Virtual environments are crucial for managing dependencies in Python projects. They isolate your project’s dependencies, ensuring compatibility and preventing conflicts.</p>
+
+<h3 id="steps-to-create-a-virtual-environment">Steps to Create a Virtual Environment:</h3>
+
+<ol>
+  <li><strong>Create a Virtual Environment</strong>:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python <span class="nt">-m</span> venv venv
+</code></pre></div>    </div>
+    <p>```bash</p>
+  </li>
+  <li><strong>Activate the Virtual Environment</strong>:
+    <ul>
+      <li>On Windows:
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>venv<span class="se">\S</span>cripts<span class="se">\a</span>ctivate
+</code></pre></div>        </div>
+      </li>
+      <li>On macOS and Linux:
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">source </span>venv/bin/activate
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Install Project Dependencies</strong>:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install</span> <span class="nt">-r</span> requirements.txt
+</code></pre></div>    </div>
+  </li>
+</ol>
+
