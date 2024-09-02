@@ -38,10 +38,20 @@
 
         <section>
             <div id="title">
-                <a href="{{ site.baseurl }}">
+                <a href="{{ site.baseurl }}/">
                     <h1>{{ site.title | default: site.github.repository_name }}</h1>
                 </a>
                 <p>{{ site.description | default: site.github.project_tagline }}</p>
+                <nav>
+                    <ul
+                        style="display: flex; gap: 10px;"
+                    >
+                        <li><a href="{{ site.baseurl }}/">Home</a></li>
+                        {% for page in site.pages %}
+                        <li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </nav>
                 <hr>
                 <span class="credits left">Project maintained by <a href="{{ site.github.owner_url }}">{{
                         site.github.owner_name }}</a></span>

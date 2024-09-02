@@ -1,0 +1,1 @@
+codespell -I scripts/ignore-words.txt --skip=\"*.lock,*.svg,*.png,*.jpg,*.gif,*.pdf,*.gz,*.zip,*.tar,*.tgz,*.woff,*.woff2,*.eot,*.ttf,*.map,*.min.js,*.min.css,node_modules,*.lock,*.yaml,node_modules/\" .
